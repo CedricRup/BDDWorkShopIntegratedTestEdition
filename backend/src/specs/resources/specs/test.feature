@@ -1,8 +1,11 @@
-Feature: Time
+# language: fr
+Fonctionnalité: Calculer les points de sagesse
 
+  Scénario: Une bonne action
 
-Scenario: Tell the time
-
-  Given the clock is set to 2017-08-17 15:42:00
-  When the time is requested
-  Then the system answer with the time 2017-08-17 15:42:00
+    Etant donné un enfant qui s'appelle "CRU"
+    Et que "CRU" croit au Père Noel
+    Quand "CRU" fait
+      | Action                           | Type  | Points | Date       |
+      | Aider une grand mère à traverser | Bonne | 20     | 23/12/2017 |
+    Alors les points de sagesse de "CRU" pour 2017 valent 20
